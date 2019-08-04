@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>Maintenance-Manager</artifactId>
+	<artifactId>maintenance-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Maintenance-Manager</name>
-	<description>To record the maintenance work required.</description>
+	<name>maintenance-service</name>
+	<description>To record maintenance problems, solutions, and costs.</description>
 
 	<properties>
 		<java.version>1.8</java.version>
