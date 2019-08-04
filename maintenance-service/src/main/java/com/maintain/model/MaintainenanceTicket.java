@@ -1,13 +1,8 @@
 package com.maintain.model;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
-import java.util.Date;
-
 public class MaintainenanceTicket {
 	private Long id;
-	private LocalDateTime workDoneDate;
+	private String workDoneDate;
 	private String workType;
 	private String workDescription;
 	private String workMaintenanceNotes;
@@ -20,16 +15,11 @@ public class MaintainenanceTicket {
 		this.id = id;
 	}
 
-	public LocalDateTime getSentDate() {
+	public String getSentDate() {
 		return workDoneDate;
 	}
 
-	public Date getSentDateAsDate() {
-		Instant instant = workDoneDate.toInstant(ZoneOffset.of("-5"));
-		return Date.from(instant);
-	}
-
-	public void setSentDate(LocalDateTime sentDate) {
+	public void setSentDate(String sentDate) {
 		this.workDoneDate = sentDate;
 	}
 
